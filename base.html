@@ -1,0 +1,21 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - UserList</title>
+      {% else %}
+      <title>Welcome to UserList</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Commands: <br>
+          <a href="/">Home</a><br>
+          <a href="/reset">Reset database</a><br>
+          <a href="/add">Add</a><br>
+          <a href="/delete">Delete</a><br>
+          <a href="/showall">Show all</a><br>
+          <a href="/show">Show</a>
+        <hr>
+      
+        {% block content %}{% endblock %}
+    </body>
+</html>
